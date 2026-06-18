@@ -24,8 +24,10 @@ function ThemeInitializer({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  const basename = window.location.pathname.replace(/\/$/, '');
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <ThemeInitializer>
         <div className="min-h-screen bg-amber-50 dark:bg-stone-900 transition-colors duration-300">
           <Routes>

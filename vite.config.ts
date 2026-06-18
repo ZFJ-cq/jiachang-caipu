@@ -6,6 +6,7 @@ import { traeBadgePlugin } from 'vite-plugin-trae-solo-badge';
 // https://vite.dev/config/
 export default defineConfig({
   root: '.',
+  base: './',
   server: {
     watch: {
       ignored: ['**/数学前端项目/**'],
